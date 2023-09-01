@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Digital Clock</title>
+  </head>
+  <body>
+
+    <div class="custom-container">
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="custom-content">
+        <p>Timer and Stopwatch</p>
+        <h3>CodeClause Internship Task</h3>
+        <p class="clock-type"></p>
+      </div>
+
+      <div class="main-custom-container">
+        <div class="custom-clock">
+          <div class="custom-wrapper">
+            <div class="main-custom">
+              <div class="custom-hour">
+                <p class="custom-number" id="custom-hour">20</p>
+                <p>hours</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-min">
+                <p class="custom-number" id="custom-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-sec">
+                <p class="custom-number" id="custom-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-ampm">
+                <p class="custom-number" id="custom-ampm">AM</p>
+                <p id="other-custom-ampm">PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="custom-btns">
+            <button class="custom-btn" id="custom-stopwatch-btn">Stopwatch</button>
+            <button class="custom-btn" id="custom-timer-btn">Timer</button>
+          </div>
+        </div>
+
+        <div class="custom-stopwatch hidden">
+          <div class="custom-wrapper">
+            <div class="main-custom">
+              <div class="custom-hour">
+                <p class="custom-number" id="custom-stopwatch-hour">00</p>
+                <p>hours</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-min">
+                <p class="custom-number" id="custom-stopwatch-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-sec">
+                <p class="custom-number" id="custom-stopwatch-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-ms">
+                <p class="custom-number" id="custom-stopwatch-ms">00</p>
+                <p>milliseconds</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-btns">
+            <button class="custom-btn start-stopwatch">Start</button>
+            <button class="custom-btn lap-stopwatch">Lap</button>
+            <button class="custom-btn reset-stopwatch">Stop</button>
+            <button class="custom-btn back-btn">Back</button>
+          </div>
+          <div class="custom-laps" id="varshini"></div>
+        </div>
+
+        <div class="custom-timer hidden">
+          <div class="custom-wrapper">
+            <div class="main-custom">
+              <div class="custom-hour">
+                <p class="custom-number" id="custom-timer-hour">00</p>
+                <p>hours</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-min">
+                <p class="custom-number" id="custom-timer-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-sec">
+                <p class="custom-number" id="custom-timer-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="custom-colon">:</p>
+              <div class="custom-ms">
+                <p class="custom-number" id="custom-timer-ms">00</p>
+                <p>milliseconds</p>
+              </div>
+            </div>
+          </div>
+          <div class="custom-btns">
+            <button class="custom-btn start-timer">Start</button>
+            <button class="custom-btn stop-timer hidden">Stop</button>
+            <button class="custom-btn reset-timer">Reset</button>
+            <button class="custom-btn back-btn">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
